@@ -1,9 +1,15 @@
 img {
-  max-width: 600px;
+  max-width: 525px;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
         rgba(0, 0, 0, 0.19);
 }
+
+@media(min-width:992px){
+  img {
+    max-width: 600px;
+  }
+  }
 a{
   margin-right: 10px;
   color:#d08cd1;
@@ -55,12 +61,15 @@ a:hover{
       align-items: center;
     }
 
-    @media(max-width:460px){
+    @media(max-width:768px){
       .project-tile{
         flex-direction: column;
       }
       .project-description{
         font-size: 1.5em;
         width: 90%;
+      }
+      img {
+        max-width: 95vw;
       }
     }
