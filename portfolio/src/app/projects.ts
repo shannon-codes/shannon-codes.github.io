@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     name: 'Yoga Learning Assistant',
     image: '../../assets/images/c1.png',
-    description: 'The Yoga Learning Assistant is a web platform allows the user recieve colourful feedback on their poses through their live webcam capture. The application live detects 17 body joints of the user in 2D space and compares it to position of the instructor on the yoga video. This was the Capstone Winner for the Sheridan Applied Computing Capstone Showcase Competition 2020.',
+    description: 'The Yoga Learning Assistant is a web platform that provides real-time feedback on live webcam capture. The application live detects 17 body joints of the user in 2D space and compares it to the position of the instructor on the yoga video. This was the Capstone Winner for the 2020 Sheridan Applied Computing Capstone Showcase Competition.',
     tech: 'React, PoseNet, TensorFlow.js, Bootstrap, Node.js, MongoDB',
     demo: 'http://capstone.dev.fast.sheridanc.on.ca/grpTechCatDream/videos/grpTechCatDream_AI_Yoga_Learning_Assistant_Pitch.mp4'
   },
@@ -21,7 +21,7 @@ export const projects = [
     name: 'Uplift',
     image: '../../assets/images/uplift.png',
     github: 'https://github.com/shannon-codes/rbcuplift',
-    description: 'Designed this website at the RBC AmpHacks 2020 hackathon for 3rd/4th year students. Our four-member team won 2nd place. RBC Small business owners get their questions answered and brainstorm over 1-hour calls with mentors from departments like technology, marketing, human resources, and management. Uplift platform helps build customer relationships and helps businesses during the pandemic.',
+    description: 'Designed this website at the RBC AmpHacks 2020 36-hour hackathon for 3rd/4th year students. Our four-member team won 2nd place. RBC Small business owners get their questions answered and brainstorm over 1-hour calls with mentors from departments like technology, marketing, human resources, and management. Uplift platform helps build customer relationships and helps businesses during the pandemic.',
     tech: 'Angular',
     document:'../../assets/images/Uplift.pdf',
     demo: 'https://shannon-codes.github.io/rbcuplift'
@@ -39,7 +39,7 @@ export const projects = [
     name: 'Community Swap Portal',
     image: '../../assets/images/eswap.JPG',
     github: 'https://github.com/shannon-codes/Community-eSwap',
-    description: 'This application is for current computer science students to volunteer with community non-profits. Non-profit community organization or individuals can post opportunities for students. Organizations swap assets such as rehearsal venue, instruments, use of truck, etc, if monetary payment is not available',
+    description: 'This web application is for current computer science students to volunteer with community non-profits. Non-profit community organization or individuals can post opportunities for students. Organizations swap assets such as rehearsal venue, instruments, use of truck, etc, if monetary payment is not available',
     tech: 'C# ASP.NET, Microsoft SQL Server'
   },
   {
