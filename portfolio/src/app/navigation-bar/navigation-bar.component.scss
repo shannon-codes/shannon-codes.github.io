@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+#navbar{
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  // background-color:green;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+ 
+}
+nav{
+  
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+svg{
+  margin-top:10px;
+}
+
+.profile-link{
+  padding:10px;
+}
+
+.profile-link:hover{
+color:white;
+fill:#FFF;
+}
+svg:hover{
+fill:white;
+}
+
+@media(max-width:460px){
+  .ext-link{
+display:none;
+  }
+}
