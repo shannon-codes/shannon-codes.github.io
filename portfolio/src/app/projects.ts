@@ -9,15 +9,6 @@ export const projects = [
   },
   {
     id: 2,
-    name: 'Movie Night iOS App',
-    image: '../../assets/images/MovieNight.png',
-    github: 'https://github.com/shannon-codes/iOS-Movie-Night',
-    description: 'An iOS mobile app that helps users plan their movie night. The application fetches movie information from themoviedb.org API. Users can add, view, save, and delete their list of Favorites and set notifications for movie release dates. More screenshots and details in README on GitHub.',
-    tech: 'Swift, SQLite3, Firebase, CoreLocation, Xcode',
-    document: '../../assets/images/iOS Movie Night App.pdf'
-  },
-  {
-    id: 3,
     name: 'Uplift',
     image: '../../assets/images/uplift.png',
     github: 'https://github.com/shannon-codes/rbcuplift',
@@ -25,7 +16,16 @@ export const projects = [
     tech: 'Angular',
     document:'../../assets/images/Uplift.pdf',
     demo: 'https://shannon-codes.github.io/rbcuplift'
-  },  
+  },
+  {
+    id: 3,
+    name: 'Movie Night iOS App',
+    image: '../../assets/images/MovieNight.png',
+    github: 'https://github.com/shannon-codes/iOS-Movie-Night',
+    description: 'An iOS mobile app that helps users plan their movie night. The application fetches movie information from themoviedb.org API. Users can add, view, save, and delete their list of Favorites and set notifications for movie release dates. More screenshots and details in README on GitHub.',
+    tech: 'Swift, SQLite3, Firebase, CoreLocation, Xcode',
+    document: '../../assets/images/iOS Movie Night App.pdf'
+  }, 
   {
     id: 4,
     name: 'Grades Management',

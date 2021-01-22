@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple";
 @import "https://fonts.googleapis.com/css?family=Archivo+Black&display=swap";
+@import "https://fonts.googleapis.com/css?family=Vibur&display=swap";
 
 
 h1{
@@ -12,7 +13,7 @@ h1{
 }
 
 .welcome-section{
-  
+  font-family: "Vibur", cursive;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                   url("../../assets/images/tiger-desktop.jpg");
                   background-size: 50%;
@@ -39,28 +40,67 @@ text-align: center;
   margin-top: 10vh;
 }
 
-.effect {
-  background: 50% 100% / 50% 50% no-repeat
-              radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 6em;
-  font-family: "Source Sans Pro", sans-serif;
-  animation: reveal 3000ms ease-in-out forwards 200ms,
-             glow 2500ms linear infinite 2000ms;
+.sign {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 
-  @keyframes reveal {
-    80%{
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
+  &__word {
+    font-size: 5.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
   }
-  @keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #fff;
-    }
+
+}
+
+/*-- Animation Keyframes --*/
+
+// animation
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
   }
-}  
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+
+
+// Link
+.link {
+	position: absolute;
+	bottom: 10px; left: 10px;
+	color: #828282;
+	text-decoration: none;
+	
+	&:focus,
+	&:hover {
+    color: #c6e2ff;
+		text-shadow:
+    0 0 2px rgba(202,228,225,0.92),
+    0 0 10px rgba(202,228,225,0.34),
+    0 0 4px rgba(30,132,242,0.52),
+    0 0 7px rgba(30,132,242,0.92),
+    0 0 11px rgba(30,132,242,0.78),
+    0 0 16px rgba(30,132,242,0.92);
+	}
+}

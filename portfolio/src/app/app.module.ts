@@ -42,6 +42,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project/project.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { FooterComponent } from './footer/footer.component';
     NavigationBarComponent,
     ProjectListComponent,
     ProjectComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

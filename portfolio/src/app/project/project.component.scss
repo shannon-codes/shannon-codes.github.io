@@ -3,6 +3,7 @@ img {
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
         rgba(0, 0, 0, 0.19);
+        margin: 10px;
 }
 
 @media(min-width:992px){
@@ -28,7 +29,7 @@ a{
     width: 100%;
     min-height:100vh;
     background: linear-gradient(35deg,#024e69,#5e0023);
-   
+    // background: linear-gradient(35deg,rgb(130, 159, 238),rgb(153, 197, 182));
     align-items: center;
     justify-content: space-evenly;
   }
