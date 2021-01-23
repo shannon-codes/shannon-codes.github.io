@@ -1,6 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple";
-@import "https://fonts.googleapis.com/css?family=Archivo+Black&display=swap";
-@import "https://fonts.googleapis.com/css?family=Vibur&display=swap";
+// @import "https://fonts.googleapis.com/css?family=Vibur&display=swap";
 
 
 h1{
@@ -13,10 +11,10 @@ h1{
 }
 
 .welcome-section{
-  font-family: "Vibur", cursive;
+  font-family: "Vibur",cursive;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                   url("../../assets/images/tiger-desktop.jpg");
-                  background-size: 50%;
+                  // background-size: 50%;
                   background-position: center;
                   background-repeat: no-repeat;
                   background-size: cover;
