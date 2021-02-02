@@ -1,14 +1,14 @@
 a {
   text-decoration: none;
-  color:black;
+  color:white;
   font-weight: bold;
+  transition: all 100ms ease-in-out;
 }
 
 #navbar{
   display:flex;
   justify-content:flex-end;
   align-items: center;
-  // background-color:green;
   position: fixed;
   top:0;
   left:0;
@@ -18,27 +18,29 @@ a {
 nav{
   
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 svg{
   margin-top:10px;
 }
+svg:hover{
+  fill:skyblue;
+  
+}  
 
 .profile-link{
   padding:10px;
 }
 
 .profile-link:hover{
-color:white;
-fill:#FFF;
-}
-svg:hover{
-fill:white;
+color:skyblue;
+fill:skyblue;
+transform:rotate(10deg);
 }
 
-@media(max-width:460px){
+@media(max-width:560px){
   .ext-link{
-display:none;
+    display:none;
   }
 }

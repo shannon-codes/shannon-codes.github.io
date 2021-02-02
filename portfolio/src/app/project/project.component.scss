@@ -1,76 +1,78 @@
+.project-tile{
+  display:flex;
+  width: 100%;
+  min-height:100vh;
+  background: linear-gradient(35deg,#ffd194, #70e1f5);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-tile2{
+  display:flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  min-height:100vh;
+  background: linear-gradient(35deg,#ffd194, #70e1f5);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 img {
   max-width: 525px;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
         rgba(0, 0, 0, 0.19);
-        margin: 10px;
+  margin: 10px;
 }
-
+//large screen
 @media(min-width:992px){
   img {
-    max-width: 600px;
+    max-width: 40vw;
   }
-  }
+}
 a{
   margin-right: 10px;
-  color:#d08cd1;
+  color:#8cbbd1;
 }
 
 .project-name{
-  color:#d08cd1;
+  color:black;
   font-weight: bold;
 }
  mat-card-content{
   text-align: center;
   }
 
-  #d1{
-    display:flex;
-    width: 100%;
-    min-height:100vh;
-    background: linear-gradient(35deg,#024e69,#5e0023);
-    // background: linear-gradient(35deg,rgb(130, 159, 238),rgb(153, 197, 182));
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  #d2{
-    display:flex;
-    width: 100%;
-    min-height:100vh;
-    background: linear-gradient(35deg,#ff8229,#5e1e00);
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  svg:hover{
-    fill:purple;
-    }
+svg:hover{
+  fill:white;
+}
 a:hover{
-  color:purple;
+  color:white;
 }
 
-    .project-description{
-      font-size: 1.5em;
-      width: calc(100%  / 3);
-      color: white;
-    }
+.project-description{
+  font-size: 1.5em;
+  width: calc(100%  / 3);
+  color: black;
+}
 
-    .project-links{
-      display:flex;
-      // justify-content: space-evenly;
-      align-items: center;
-    }
+.project-links{
+  display:flex;
+  align-items: center;
+}
 
-    @media(max-width:768px){
-      .project-tile{
-        flex-direction: column;
-      }
-      .project-description{
-        font-size: 1.5em;
-        width: 90%;
-      }
-      img {
-        max-width: 95vw;
-      }
-    }
+@media(max-width:768px){
+  .project-tile{
+    flex-direction: column;
+  }
+  .project-tile2{
+    flex-direction: column;
+  }
+  .project-description{
+    font-size: 1.5em;
+    width: 90%;
+  }
+  img {
+    max-width: 90vw;
+  }
+}

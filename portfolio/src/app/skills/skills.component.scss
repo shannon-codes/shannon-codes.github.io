@@ -1,35 +1,48 @@
 #skills-section{
   width: 100%;
   height:100vh;
-  background: linear-gradient(35deg,teal,#024e69);
+  //background: linear-gradient(35deg,teal,#024e69);
+  // background: linear-gradient(35deg, #757575, #BDBDBD);
+  //background: linear-gradient(35deg,teal,#024e69);
   text-align: center;
   font-family: 'Lato';
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  //align-content: center;
+
+  // @media(max-width:768px){
+  //     height:100vh;
+  //   }
+    
+}
+
+img{
+  height:200px;
+  width: 200px;
 }
 
 .title{
   padding: 10px;
   font-size: 3em;
+  line-height: 1;
 }
 
 .container-skills{
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .container-skill{
-  max-width: 20%;
+  max-width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  margin: 20px;
-  }
+  align-items: center;
+  margin: 10px;
+}
 
 @media(max-width:768px){
 
@@ -44,5 +57,11 @@
   }
   .tech{
     display: none;
+  }
+  img{
+    
+    height:100px;
+    width:100px;
+    
   }
 }

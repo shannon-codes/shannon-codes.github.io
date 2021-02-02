@@ -1,50 +1,22 @@
-// @import "https://fonts.googleapis.com/css?family=Vibur&display=swap";
-
-
-h1{
-  font-size:4em;
-  line-height: 1em;
-}
-
-.my-name{
-  color: #d08cd1;
-}
-
 .welcome-section{
   font-family: "Vibur",cursive;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                  url("../../assets/images/tiger-desktop.jpg");
-                  // background-size: 50%;
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  position: relative;
+    url("../../assets/images/banner2.jpg");
   height:100vh;
-  @media(max-width:460px){
-    
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../assets/images/tiger-mobile.jpg");
-  }
-  
 }
 
-.heroText{
-text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  margin-top: 10vh;
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 .sign {
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  //align-items: center;
 
   &__word {
     font-size: 5.6rem;
@@ -53,8 +25,27 @@ text-align: center;
     color: #c6e2ff;
     animation: neon .08s ease-in-out infinite alternate;
   }
-
 }
+@media only screen and (max-device-width: 992px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+  .welcome-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/banner2-sm.jpg");
+  }
+  .sign{
+    &__word{
+      font-size: 3rem;
+      text-align: left;
+      margin:5%;
+    }
+  }
+}
+
+  
+
+
 
 /*-- Animation Keyframes --*/
 
@@ -79,26 +70,4 @@ text-align: center;
     0 0 38px rgba(30,132,242,0.88),
     0 0 60px rgba(30,132,242,1);
   }
-}
-
-
-
-// Link
-.link {
-	position: absolute;
-	bottom: 10px; left: 10px;
-	color: #828282;
-	text-decoration: none;
-	
-	&:focus,
-	&:hover {
-    color: #c6e2ff;
-		text-shadow:
-    0 0 2px rgba(202,228,225,0.92),
-    0 0 10px rgba(202,228,225,0.34),
-    0 0 4px rgba(30,132,242,0.52),
-    0 0 7px rgba(30,132,242,0.92),
-    0 0 11px rgba(30,132,242,0.78),
-    0 0 16px rgba(30,132,242,0.92);
-	}
 }
