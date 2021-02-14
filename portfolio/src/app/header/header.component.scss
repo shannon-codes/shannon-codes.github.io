@@ -23,6 +23,7 @@
     text-align: center;
     line-height: 1;
     color: #c6e2ff;
+    //color:#70e1f5;
     animation: neon .08s ease-in-out infinite alternate;
   }
 }
@@ -70,4 +71,42 @@
     0 0 38px rgba(30,132,242,0.88),
     0 0 60px rgba(30,132,242,1);
   }
+}
+
+#more-arrows {
+	width: 75px;
+  height: 65px;
+  
+  &:hover {
+    
+    polygon {
+      fill: #FFF;
+      transition: all .2s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+      
+    }
+  
+  }
+  
+}
+
+polygon {
+  fill: #70e1f5;
+  transition: all .2s ease-out;
+    
+  &.arrow-middle {
+	  opacity: 0.75;
+	}
+
+	&.arrow-top {
+	  opacity: 0.5
+	}
+	 
 }

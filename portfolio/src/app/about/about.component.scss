@@ -1,7 +1,8 @@
 #about-section{
   width: 100%;
-  height:95vh;
-  background: linear-gradient(35deg,#ffd194, #70e1f5);
+  min-height:50vh;
+  //background: linear-gradient(35deg,#ffd194, #70e1f5);
+  background: linear-gradient(45deg, white, #c6e2ff);
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -18,13 +19,14 @@
   justify-content: center;
   align-items: center;
   max-height:100%;
+  margin:2%;
 }
 img{
   max-width: 100%;
   height:auto;
 }
 .custom-card{
-  max-width: 300px;
+  max-width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
         rgba(0, 0, 0, 0.19);
         text-align: center;
@@ -35,12 +37,21 @@ img{
   background-size: cover;
 }
 
+// .custom-about{
+//   max-width: 300px;
+//   margin: 30px;
+//   padding: 50px;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+//         rgba(0, 0, 0, 0.19);
+//         //background: linear-gradient(35deg,teal,#024e69);
+// }
+
 .custom-about{
   max-width: 300px;
   margin: 30px;
   padding: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-        rgba(0, 0, 0, 0.19);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+  //       rgba(0, 0, 0, 0.19);
         //background: linear-gradient(35deg,teal,#024e69);
 }
 

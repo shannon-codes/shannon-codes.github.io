@@ -3,23 +3,35 @@
 
 #contact-section{
   width: 100%;
-  height:100vh;
-  background: linear-gradient(35deg,teal,#024e69);
+  min-height:50vh;
+  //background: linear-gradient(35deg,teal,#024e69);
   text-align: center;
-  //font-family: 'Lato';
-  //display: flex;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  
 }
 
 h1{
   font-size:4em;
 }
 
+
+a{
+  transition: all 100ms ease-in-out;
+}
+
+.message{
+  //color:white;
+  margin-bottom:2%;
+}
+
+
 svg:hover{
-  fill:white;
+  //fill:white;
+  fill:#c6e2ff;
+  transform:rotate(10deg);
   }
   svg{
     padding:20px;
@@ -28,7 +40,7 @@ svg:hover{
 
 .sign {
   
-  
+  margin-top: 5%;
   font-family: "Vibur", cursive;
   
   &__word {
