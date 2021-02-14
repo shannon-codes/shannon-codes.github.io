@@ -37,22 +37,10 @@ img{
   background-size: cover;
 }
 
-// .custom-about{
-//   max-width: 300px;
-//   margin: 30px;
-//   padding: 50px;
-//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-//         rgba(0, 0, 0, 0.19);
-//         //background: linear-gradient(35deg,teal,#024e69);
-// }
-
 .custom-about{
   max-width: 300px;
   margin: 30px;
   padding: 50px;
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-  //       rgba(0, 0, 0, 0.19);
-        //background: linear-gradient(35deg,teal,#024e69);
 }
 
 @media(max-width:768px){
@@ -68,7 +56,6 @@ img{
   .custom-about{
     margin: 5px;
     padding: 5px;
-    // color:white;
     max-width: 90%;
   }
 }
