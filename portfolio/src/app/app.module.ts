@@ -44,6 +44,9 @@ import { ProjectComponent } from './project/project.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { DialogDetailComponent } from './dialog-detail/dialog-detail.component';
+import { SafePipe } from './pipe/safe.pipe';
+import { ProjectGridItemComponent } from './project-grid-item/project-grid-item.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { SkillsComponent } from './skills/skills.component';
     ProjectComponent,
     FooterComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    DialogDetailComponent,
+    SafePipe,
+    ProjectGridItemComponent
   ],
   imports: [
     BrowserModule,
