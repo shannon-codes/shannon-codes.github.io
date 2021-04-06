@@ -1,7 +1,13 @@
 <div id="projects-section">
   <!-- <h1 class="title"><u>PROJECTS</u></h1> -->
-  <h1 class="title"><span class="title-text">SELECTED PROJECTS</span></h1>
+  <h1 class="title"><span class="title-text">FEATURED PROJECTS</span></h1>
   <div *ngFor="let project of projects">
-  <app-project [project]="project"></app-project>
+    <app-project [project]="project"></app-project>
   </div>
-  
+  <h1 class="title"><span class="title-text">MORE PROJECTS</span></h1>
+  <div class="otherprojects__container">
+  <div *ngFor="let projectMore of projectsMore">
+    <app-project-grid-item [projectMore]="projectMore"></app-project-grid-item>
+  </div>
+</div>
+</div>

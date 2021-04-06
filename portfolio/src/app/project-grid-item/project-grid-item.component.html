@@ -1,1 +1,27 @@
-<p>project-grid-item works!</p>
+<!-- <a href=""> -->
+  <div class="card">
+  <img src={{projectMore.image}} alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><strong>{{projectMore.name}}</strong></h4>
+    <div *ngIf="projectMore.awards" class="project-awards mat-h3">
+      <div *ngFor="let award of projectMore.awards">🏆{{award}}</div>
+    </div>
+    <p>{{projectMore.description}}</p>
+    <p>{{projectMore.tech}}</p>
+    <div class="project-links">
+      <div *ngIf="projectMore.dialog">
+        <a mat-stroked-button color="accent" (click)="openDialog(projectMore.dialog)">MORE INFO</a>
+      </div>
+      <div *ngIf="projectMore.demo">
+        <a mat-stroked-button color="accent" href={{projectMore.demo}} target="_blank" alt="Live Demo Link">LIVE DEMO</a>
+      </div>
+      <div *ngIf="projectMore.github">
+        <a mat-stroked-button color="accent" href={{projectMore.github}} target="_blank" alt="Github Link">GITHUB</a>
+      </div>
+      <div *ngIf="projectMore.document">
+        <a mat-stroked-button color="accent" href={{projectMore.document}} target="_blank" alt="Powerpoint Link">PPT</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </a> -->
